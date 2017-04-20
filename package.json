@@ -1,0 +1,26 @@
+{
+  "name": "recapitalizer",
+  "version": "1.0.0",
+  "description": "take an object with all-lowercase fields, and a list of those fields camelCased, and return the object with camelCased fields",
+  "main": "recapitalize.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "tape tests/*.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewfulrich/recapitalizer.git"
+  },
+  "author": "Andrew Ulrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewfulrich/recapitalizer/issues"
+  },
+  "homepage": "https://github.com/andrewfulrich/recapitalizer#readme",
+  "devDependencies": {
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3"
+  }
+}

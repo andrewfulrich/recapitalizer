@@ -1,6 +1,6 @@
 {
   "name": "recapitalizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "take an object with all-lowercase fields, and a list of those fields camelCased, and return the object with camelCased fields",
   "main": "recapitalize.js",
   "directories": {

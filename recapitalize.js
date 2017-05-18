@@ -30,14 +30,18 @@
  */
 
 /**
- * take an object with all-lowercase fields, and a list of those fields camelCased, and return the object with camelCased fields
+ * take an object with all-lowercase or snake-case fields, and a list of those fields camelCased, and return the object with camelCased fields
  * @param object
  * @param columns
  * @returns {*}
  */
 function single(object,columns) {
-  return columns.reduce((accum,curr)=>{
-    accum[curr]=object[curr.toLowerCase()]
+  let columnsLower=columns.map((col)=>{
+    return col.toLowerCase()
+  })
+  return Object.keys(object).reduce((accum,curr)=>{
+    let colIndex=columnsLower.indexOf(curr.replace('_',''))
+    accum[columns[colIndex]]=object[curr]
     return accum
   },{})
 }

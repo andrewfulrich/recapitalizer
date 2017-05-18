@@ -43,22 +43,22 @@ a list of the objects with camelCased fields
 ```javascript
 const recapitalizer=require('recapitalizer')
 let rawObjList=[{
-  lowercase:1a,
-  snake_case:2a
+  lowercase:'1a',
+  snake_case:'2a'
   },{
-  lowercase:1b,
-  snake_case:2b
+  lowercase:'1b',
+  snake_case:'2b'
   }]
 let camelColumns=['lowerCase','snakeCase']
 recapitalizer.single(rawObj,camelColumns)
 /*
 output:
 [{
-  lowerCase:1a,
-  snakeCase:2a
+  "lowerCase":"1a",
+  "snakeCase":"2a"
   },{
-  lowerCase:1b,
-  snakeCase:2b
+  "lowerCase":"1b",
+  "snakeCase":"2b"
 }]
 */
 ```
